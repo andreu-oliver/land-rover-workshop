@@ -9,17 +9,31 @@
 </head>
 
 <body>
+  <div class="hamburger-menu">
+    <div class="hamburger-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  
+  <div class="menu-overlay">
+    <div class="menu-content">
+      <a href="Menu/generalinfo.htm" target="_self">General Information</a>
+      <a href="Menu/chassis.htm" target="_self">Chassis</a>
+      <a href="Menu/Powertrain.htm" target="_self">Powertrain</a>
+      <a href="Menu/electrical.htm" target="_self">Electrical</a>
+      <a href="Menu/bodyandpaint.htm" target="_self">Body & Paint</a>
+      <a href="Menu/otherdocs.htm">Other Documents</a>
+    </div>
+  </div>
+
   <div class="grid-container">
     <div class="grid-header">
       <h1 class="style1">Land Rover Defender</h1>
     </div>
     <div class="grid-item">
-      <p class="style3"><a href="Menu/generalinfo.htm" target="_self">General Information</a></p>
-      <p class="style3"><a href="Menu/chassis.htm" target="_self">Chassis</a></p>
-      <p class="style3"><a href="Menu/Powertrain.htm" target="_self">Powertrain</a></p>
-      <p class="style3"><a href="Menu/electrical.htm" target="_self">Electrical</a></p>
-      <p class="style3"><a href="Menu/bodyandpaint.htm" target="_self">Body &amp; Paint</a></p>
-      <p class="style3"><a href="Menu/otherdocs.htm">Other Documents</a></p>
+      <img src="Menu/images/explo.jpg" alt="Land Rover">
     </div>
     <div class="grid-footer">
       <p class="style2">2.4TDCi</p>
@@ -27,5 +41,37 @@
       <p class="style4">Info: This manual is for reference only, no liability for any inaccuracies, omissions or errors shall be taken - if in doubt please check with an appropriate expert before action - assume information contained is not verified or accurate and requires expertise to use or understand information contained. If this is not acceptable do not use the data contained - you do so at your risk.</p>
     </div>
   </div>
+
+  <script>
+    // Get DOM elements
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    
+    // Toggle menu when hamburger is clicked
+    hamburgerButton.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (menuOverlay.classList.contains('active') && 
+          !menuOverlay.contains(e.target) && 
+          !hamburgerButton.contains(e.target)) {
+        toggleMenu();
+      }
+    });
+
+    // Prevent clicks inside menu from closing it
+    menuOverlay.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    // Toggle menu function
+    function toggleMenu() {
+      menuOverlay.classList.toggle('active');
+      hamburgerButton.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
