@@ -23,37 +23,6 @@
       <p class="style4">Info: This manual is for reference only, no liability for any inaccuracies, omissions or errors shall be taken - if in doubt please check with an appropriate expert before action - assume information contained is not verified or accurate and requires expertise to use or understand information contained. If this is not acceptable do not use the data contained - you do so at your risk.</p>
     </div>
   </div>
-
-  <script>
-    // Get DOM elements
-    const hamburgerButton = document.querySelector('.hamburger-button');
-    const menuOverlay = document.querySelector('.menu-overlay');
-    
-    // Toggle menu when hamburger is clicked
-    hamburgerButton.addEventListener('click', function(e) {
-      e.stopPropagation();
-      toggleMenu();
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-      if (menuOverlay.classList.contains('active') && 
-          !menuOverlay.contains(e.target) && 
-          !hamburgerButton.contains(e.target)) {
-        toggleMenu();
-      }
-    });
-
-    // Prevent clicks inside menu from closing it
-    menuOverlay.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
-
-    // Toggle menu function
-    function toggleMenu() {
-      menuOverlay.classList.toggle('active');
-      hamburgerButton.classList.toggle('active');
-    }
-  </script>
+  
 </body>
 </html>
