@@ -12,7 +12,6 @@ body,td,th {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -20,13 +19,12 @@ body,td,th {
   flex: 1;
 }
 
-.grid-header, .grid-footer {
+.grid-header, .grid-container, .grid-footer {
   grid-column: 1 / -1;
   text-align: center;
 }
 
 .grid-footer {
-  grid-column: 1 / -1;
   text-align: center;
   margin-top: auto;
   padding: 20px;
@@ -117,7 +115,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.9);
+  background: #333300;
   border-radius: 5px;
 }
 
@@ -125,14 +123,14 @@ a:active {
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: hsl(0, 0%, 55%);
   border-radius: 3px;
   transition: all 0.3s ease;
   transform-origin: center;
 }
 
 .hamburger-button:hover span {
-  background-color: #0066cc;
+  background-color: #ffffff;
 }
 
 .hamburger-button.active span:nth-child(1) {
@@ -153,7 +151,7 @@ a:active {
   right: -300px;
   width: 300px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: #333300;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
@@ -171,7 +169,7 @@ a:active {
 }
 
 .menu-content a {
-  color: #333;
+  color: #b3b3b3;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
@@ -183,7 +181,7 @@ a:active {
 
 .menu-content a:hover {
   background: rgba(0, 102, 204, 0.1);
-  color: #0066cc;
+  color: #ffffff;
   text-decoration: none;
   transform: translateX(5px);
 }
@@ -201,5 +199,30 @@ a:active {
   .menu-overlay {
     width: 100%;
     right: -100%;
+  }
+
+  /* Increased text sizes for mobile */
+  body {
+    font-size: 16px;
+  }
+
+  .style1 {
+    font-size: 3em;
+  }
+
+  .style2 {
+    font-size: 2.5em;
+  }
+
+  .style3 a {
+    font-size: 1.4em;
+  }
+
+  .style4 {
+    font-size: 1.1em;
+  }
+
+  .menu-content a {
+    font-size: 1.4em;
   }
 }
