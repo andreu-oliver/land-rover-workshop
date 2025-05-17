@@ -10,12 +10,12 @@ function createMenuHTML() {
         </div>
         <div class="menu-overlay">
             <div class="menu-content">
-                <a href="Menu/generalinfo.htm" target="_self">General Information</a>
-                <a href="Menu/chassis.htm" target="_self">Chassis</a>
-                <a href="Menu/Powertrain.htm" target="_self">Powertrain</a>
-                <a href="Menu/electrical.htm" target="_self">Electrical</a>
-                <a href="Menu/bodyandpaint.htm" target="_self">Body & Paint</a>
-                <a href="Menu/otherdocs.htm">Other Documents</a>
+                <a href="/Menu/generalinfo.htm" target="_self">General Information</a>
+                <a href="/Menu/chassis.htm" target="_self">Chassis</a>
+                <a href="/Menu/Powertrain.htm" target="_self">Powertrain</a>
+                <a href="/Menu/electrical.htm" target="_self">Electrical</a>
+                <a href="/Menu/bodyandpaint.htm" target="_self">Body & Paint</a>
+                <a href="/Menu/otherdocs.htm">Other Documents</a>
             </div>
         </div>
     `;
