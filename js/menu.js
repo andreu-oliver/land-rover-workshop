@@ -1,5 +1,15 @@
+// Calculate relative path to Menu directory
+function getRelativePathToMenu() {
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/');
+    const depth = pathParts.length - 1;
+    if (depth <= 1) return './Menu/';  // If in root
+    return '../'.repeat(depth - 1) + 'Menu/';
+}
+
 // Create menu HTML structure
 function createMenuHTML() {
+    const menuPath = getRelativePathToMenu();
     const menuStructure = `
         <div class="hamburger-menu">
             <div class="hamburger-button">
@@ -10,12 +20,12 @@ function createMenuHTML() {
         </div>
         <div class="menu-overlay">
             <div class="menu-content">
-                <a href="/Menu/generalinfo.htm" target="_self">General Information</a>
-                <a href="/Menu/chassis.htm" target="_self">Chassis</a>
-                <a href="/Menu/Powertrain.htm" target="_self">Powertrain</a>
-                <a href="/Menu/electrical.htm" target="_self">Electrical</a>
-                <a href="/Menu/bodyandpaint.htm" target="_self">Body & Paint</a>
-                <a href="/Menu/otherdocs.htm">Other Documents</a>
+                <a href="${menuPath}generalinfo.htm" target="_self">General Information</a>
+                <a href="${menuPath}chassis.htm" target="_self">Chassis</a>
+                <a href="${menuPath}Powertrain.htm" target="_self">Powertrain</a>
+                <a href="${menuPath}electrical.htm" target="_self">Electrical</a>
+                <a href="${menuPath}bodyandpaint.htm" target="_self">Body & Paint</a>
+                <a href="${menuPath}otherdocs.htm">Other Documents</a>
             </div>
         </div>
     `;
