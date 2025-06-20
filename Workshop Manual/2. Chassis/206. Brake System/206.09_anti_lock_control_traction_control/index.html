@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Lock Control - Traction Control</title>
+    <link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+
+    <!-- Page 1 -->
+    <h1>Anti-Lock Control - Traction Control</h1>
+    <div class="publication-date">Published: Nov 4, 2008</div>
+
+    <h2>Inspection and Verification</h2>
+    <ol>
+        <li>Verify the customer concern.</li>
+        <li>Visually inspect for obvious signs of mechanical or electrical damage.</li>
+        <li>If an obvious cause for an observed or reported concern is found, correct the cause (if possible) before proceeding to the next step.</li>
+        <li>If the cause is not visually evident, check for Diagnostic Trouble Codes (DTCs) and refer to the DTC Index.</li>
+    </ol>
+
+    <h2>DTC index</h2>
+    <div class="note">
+        <strong>NOTE:</strong> If the control module/HCU is suspect and the vehicle remains under manufacturer warranty, refer to the Warranty Policy and Procedures manual (section B1.2), or determine if any prior approval programme is in operation, prior to the installation of a new module/HCU.
+    </div>
+    <div class="note">
+        <strong>NOTE:</strong> Generic scan tools may not read the codes listed, or may read only five digit codes. Match the five digits from the scan tool to the first five digits of the seven digit code listed to identify the fault (the last two digits give additional information read by the manufacturer approved diagnostic system).
+    </div>
+    <div class="note">
+        <strong>NOTE:</strong> When performing electrical voltage or resistance tests, always use a digital multimeter (DMM) accurate to three decimal places, and with an up-to-date calibration certificate. When testing resistance, always take the resistance of the DMM leads into account.
+    </div>
+    <div class="note">
+        <strong>NOTE:</strong> Check and rectify basic faults before beginning diagnostic routines involving pinpoint tests.
+    </div>
+    <div class="note">
+        <strong>NOTE:</strong> Inspect connectors for signs of water ingress, and pins for damage and/or corrosion.
+    </div>
+    <div class="note">
+        <strong>NOTE:</strong> If DTCs are recorded and, after performing the pinpoint tests, a fault is not present, an intermittent concern may be the cause. Always check for loose connections and corroded terminals.
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DTC</th>
+                <th>Description</th>
+                <th>Possible cause</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Page 1 content -->
+            <tr>
+                <td>12</td>
+                <td>Pump failure 1 - high level at C0504-8 without pump actuation</td>
+                <td>
+                    <ul>
+                        <li>ABS pump monitor circuit, short circuit to power</li>
+                        <li>ABS pump relay contacts stuck closed</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check C0504-8 ABS pump monitor circuit for short circuit to power. Check ABS pump relay for stuck closed contacts.</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Pump failure 2 - low level at C0504-8 during pump actuation</td>
+                <td>
+                    <ul>
+                        <li>ABS pump monitor circuit, short circuit to ground</li>
+                        <li>ABS pump relay fuse failure</li>
+                        <li>ABS pump relay battery supply circuit, Open circuit</li>
+                    </ul>
+                </td>
+                <td>Check for ABS pump relay fuse failure. Refer to the electrical guides and check C0504-8 ABS pump monitor circuit, for short circuit to ground. Check C0508-3 ABS pump relay battery supply circuit, for open circuit.</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Pump failure 3 - pump sticks</td>
+                <td>
+                    <div class="note">
+                        <strong>NOTE:</strong> The ABS pump is part of the ABS modulator assembly
+                    </div>
+                    <ul>
+                        <li>Internal failure ABS pump</li>
+                    </ul>
+                </td>
+                <td>Refer to the warranty policy and procedures manual if ABS pump/ABS modulator is suspect.</td>
+            </tr>
+            <!-- Page 2 content -->
+            <tr>
+                <td>15</td>
+                <td>Pump failure 4 - sticking pump relay</td>
+                <td>
+                    <ul>
+                        <li>ABS pump relay coil circuit, short circuit to power</li>
+                        <li>ABS pump relay contacts stuck closed</li>
+                        <li>ABS pump relay fault</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check C0506-15 ABS pump relay coil circuit, for short circuit to power. Check ABS pump relay for stuck closed contacts.</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Failure of the shuttle valve switch</td>
+                <td>
+                    <div class="note">
+                        <strong>NOTE:</strong> The shuttle valve switch's are integral to the ABS modulator
+                    </div>
+                    <ul>
+                        <li>Shuttle valve switch circuit, high resistance</li>
+                        <li>Shuttle valve switch circuit, open circuit</li>
+                        <li>Internal failure shuttle valve switch's</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check resistance between C0506-3 reference ground sense and C0506-6 shuttle valve switch, brake pedal not pressed expected measurement 3K ohms, both shuttle valves switches are open. Check resistance between C0506-3 reference ground sense and C0506-6 shuttle valve switch, brake pedal pressed expected measurement 1K ohm, both shuttle valves switches are closed. Check between C0506-3 and C0501-8 reference ground sense circuit for open circuit, high resistance. Check between C0506-6 and C0501-9 shuttle valve switch circuit for open circuit, high resistance. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Valve relay failure 1 - permanently powered on (can't be switched off)</td>
+                <td><ul><li>Internal failure</li></ul></td>
+                <td>Refer to the warranty policy and procedures manual if ABS pump/ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Valve relay failure 2 - no output (can't be switched on)</td>
+                <td><ul><li>Internal failure</li></ul></td>
+                <td>Refer to the warranty policy and procedures manual if ABS pump/ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Failure of the throttle position signal</td>
+                <td><ul><li>Torque, throttle, eng I.D circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check between C0504-10 and C0872-B1 for open circuit.</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Reference earth C0506-3 not connected to ground</td>
+                <td><ul><li>Reference ground sense circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-3 reference ground sense circuit, for open circuit.</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Gear info not plausible</td>
+                <td><ul><li>Open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check between C0504-10 and C0872-B1 for open circuit.</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Sensor right hand front - sensor offset voltage out of range</td>
+                <td>
+                    <ul>
+                        <li>The wheel speed sensor air gap may be too large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                    </ul>
+                </td>
+                <td>Check front right hand wheel speed sensor for correct air gap. Refer to the electrical guides and check front right hand wheel speed sensor circuit for high resistance. Check front right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms. Suspect front right hand wheel speed sensor.</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Sensor left hand rear - sensor offset voltage out of range</td>
+                <td>
+                    <ul>
+                        <li>The wheel speed sensor air gap may be too large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                    </ul>
+                </td>
+                <td>Check rear left hand wheel speed sensor for correct air gap. Refer to the electrical guides and check rear left hand wheel speed sensor circuit for high resistance. Check rear left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms. Suspect rear left hand wheel speed sensor.</td>
+            </tr>
+            <!-- Page 3 content -->
+            <tr>
+                <td>26</td>
+                <td>Sensor left hand front - sensor offset voltage out of range</td>
+                <td>
+                    <ul>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                        <li>The wheel speed sensor air gap may be too large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                    </ul>
+                </td>
+                <td>Check front left hand wheel speed sensor for correct air gap. Refer to the electrical guides and check front left hand wheel speed sensor circuit for high resistance. Check front left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms. Suspect front left hand wheel speed sensor.</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Sensor right hand rear - sensor offset voltage out of range</td>
+                <td>
+                    <ul>
+                        <li>The wheel speed sensor air gap may be too large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                    </ul>
+                </td>
+                <td>Check rear right hand wheel speed sensor for correct air gap. Refer to the electrical guides and check rear right hand wheel speed sensor circuit for high resistance. Check rear right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms. Suspect rear right hand wheel speed sensor.</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Inlet valve right hand front - power amp with electrical connection interrupted</td>
+                <td><ul><li>Right hand front inlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-5 front right inlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Outlet valve right hand front - power amp with electrical connection interrupted</td>
+                <td><ul><li>Right hand front outlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-4 front right outlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Inlet valve left hand front - power amp with electrical connection interrupted</td>
+                <td><ul><li>Left hand front inlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-2 front left inlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Outlet valve left hand front - power amp with electrical connection interrupted</td>
+                <td><ul><li>Left hand front outlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-1 front left outlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Inlet valve right hand rear - power amp with electrical connection interrupted</td>
+                <td><ul><li>Right hand rear inlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-11 rear right inlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Outlet valve right hand rear - power amp with electrical connection interrupted</td>
+                <td><ul><li>Right hand rear outlet circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-10 rear right outlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <!-- Page 4 content -->
+            <tr>
+                <td>36</td>
+                <td>Inlet valve left hand rear - power amp with electrical connection interrupted</td>
+                <td><ul><li>Left hand rear inlet valve circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-8 rear left inlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Outlet valve left hand rear - power amp with electrical connection interrupted</td>
+                <td><ul><li>Left hand rear outlet circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-7 rear left outlet modulator valve circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Pump relay - power amp with electrical connection interrupted</td>
+                <td><ul><li>ABS pump relay coil circuit, open circuit</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-15 ABS pump relay coil circuit for open circuit.</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Sensor right hand front - sensor air gap too large</td>
+                <td><ul><li>Front right hand wheel speed sensor large air gap</li></ul></td>
+                <td>Check front right hand wheel speed sensor for correct air gap.</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Sensor left hand rear - sensor air gap too large</td>
+                <td><ul><li>Rear left hand wheel speed sensor large air gap</li></ul></td>
+                <td>Check rear left hand wheel speed sensor for correct air gap.</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Sensor left hand front - sensor air gap too large</td>
+                <td><ul><li>Front left hand wheel speed sensor large air gap</li></ul></td>
+                <td>Check front left hand wheel speed sensor for correct air gap.</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Sensor right hand rear - sensor air gap too large</td>
+                <td><ul><li>Rear right hand wheel speed sensor large air gap</li></ul></td>
+                <td>Check rear right hand wheel speed sensor for correct air gap.</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Inlet valve right hand front - power amp with short circuit to ground</td>
+                <td><ul><li>Right hand front inlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-5 front right inlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Outlet valve right hand front - power amp with short circuit to ground</td>
+                <td><ul><li>Right hand front outlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-4 front right outlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Inlet valve left hand front - power amp with short circuit to ground</td>
+                <td><ul><li>Left hand front inlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-2 front left inlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>Outlet valve left hand front - power amp with short circuit to ground</td>
+                <td><ul><li>Left hand front outlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-1 front left outlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Inlet valve right hand rear - power amp with short circuit to ground</td>
+                <td><ul><li>Right hand rear inlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-11 rear right inlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Outlet valve right hand rear - power amp with short circuit to ground</td>
+                <td><ul><li>Right hand rear outlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-10 rear right outlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Inlet valve left hand rear - power amp with short circuit to ground</td>
+                <td><ul><li>Left hand rear inlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-8 rear left inlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <!-- Page 5 content -->
+            <tr>
+                <td>57</td>
+                <td>Outlet valve left hand rear - power amp with short circuit to ground</td>
+                <td><ul><li>Left hand rear outlet valve short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-7 rear left outlet modulator valve circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Pump relay - power amp with short circuit to ground</td>
+                <td><ul><li>ABS pump relay coil circuit, short circuit to ground</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-15 ABS pump relay coil circuit for short circuit to ground.</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>Sensor right hand front - sensor DC-failure</td>
+                <td>
+                    <ul>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>Wheel speed sensor circuit, short circuit to ground</li>
+                        <li>Wheel speed sensor circuit, short circuit to power</li>
+                        <li>Wheel speed sensor failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check front right hand wheel speed sensor circuit for open circuit, short circuit to ground, short circuit to power. Check front right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>Sensor left hand rear - sensor DC-failure</td>
+                <td>
+                    <ul>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>Wheel speed sensor circuit, short circuit to ground</li>
+                        <li>Wheel speed sensor circuit, short circuit to power</li>
+                        <li>Wheel speed sensor failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check rear left hand wheel speed sensor circuit for open circuit, short circuit to ground, short circuit to power. Check rear left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>Sensor left hand front - sensor DC-failure</td>
+                <td>
+                    <ul>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>Wheel speed sensor circuit, short circuit to ground</li>
+                        <li>Wheel speed sensor circuit, short circuit to power</li>
+                        <li>Wheel speed sensor failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check front left hand wheel speed sensor circuit for open circuit, short circuit to ground, short circuit to power. Check front left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>Sensor right hand rear - sensor DC-failure</td>
+                <td>
+                    <ul>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>Wheel speed sensor circuit, short circuit to ground</li>
+                        <li>Wheel speed sensor circuit, short circuit to power</li>
+                        <li>Wheel speed sensor failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check rear right hand wheel speed sensor circuit for open circuit, short circuit to ground, short circuit to power. Check rear right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>Inlet valve right hand front - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Right hand front inlet valve circuit, short circuit to reference ground</li>
+                        <li>Right hand front inlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-5 front right inlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>Outlet valve right hand front - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Right hand front outlet valve circuit, short circuit to reference ground</li>
+                        <li>Right hand front outlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-4 front right outlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <!-- Page 6 content -->
+            <tr>
+                <td>72</td>
+                <td>Inlet valve left hand front - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Left hand front inlet valve circuit, short circuit to reference ground</li>
+                        <li>Left hand front inlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-2 front left inlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>Outlet valve left hand front - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Left hand front outlet valve circuit, short circuit to reference ground</li>
+                        <li>Left hand front outlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-1 front left outlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>Inlet valve right hand rear - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Right hand rear inlet valve circuit, short circuit to reference ground</li>
+                        <li>Right hand rear inlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-11 rear right inlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>Outlet valve right hand rear - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Right hand rear outlet valve circuit, short circuit to reference ground</li>
+                        <li>Right hand rear outlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-10 rear right outlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>Inlet valve left hand rear - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Left hand rear inlet valve circuit, short circuit to reference ground</li>
+                        <li>Left hand rear inlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-8 rear left inlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>Outlet valve left hand rear - power amp with short circuit to Uvent</td>
+                <td>
+                    <ul>
+                        <li>Left hand rear outlet valve circuit, short circuit to reference ground</li>
+                        <li>Left hand rear outlet valve internal failure</li>
+                    </ul>
+                </td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-7 rear left outlet modulator valve circuit and C0506-3 reference ground sense circuit. Refer to the warranty policy and procedures manual if ABS modulator is suspect.</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>Pump relay - power amp. with short circuit to Uvent</td>
+                <td><ul><li>ABS pump relay coil circuit, short circuit to reference ground</li></ul></td>
+                <td>Refer to the electrical guides and check harness for short circuit between C0506-15 ABS pump relay coil circuit and C0506-3 reference ground sense circuit.</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>Sensor right hand front - intermittent sensor output during driving</td>
+                <td>
+                    <ul>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                        <li>Wheel speed sensor air gap to large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                    </ul>
+                </td>
+                <td>Check front right hand wheel speed sensor for correct air gap. Refer to the electrical guides and check front right hand wheel speed sensor circuit for high resistance, open circuit. Check front right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>Sensor left hand rear - intermittent sensor output during driving</td>
+                <td>
+                    <ul>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                        <li>Wheel speed sensor air gap to large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                    </ul>
+                </td>
+                <td>Check rear left hand wheel speed sensor for correct air gap. Refer to the electrical guides and check rear left hand wheel speed sensor circuit for high resistance, open circuit. Check rear left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <!-- Page 7 content -->
+            <tr>
+                <td>86</td>
+                <td>Sensor left hand front - intermittent sensor output during driving</td>
+                <td>
+                    <ul>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                        <li>Wheel speed sensor air gap to large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                    </ul>
+                </td>
+                <td>Check front left hand wheel speed sensor for correct air gap. Refer to the electrical guides and check front left hand wheel speed sensor circuit for high resistance, open circuit. Check front left hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>Sensor right hand rear - intermittent sensor output during driving</td>
+                <td>
+                    <ul>
+                        <li>The output of the wheel speed sensor may be intermittent</li>
+                        <li>Wheel speed sensor air gap to large</li>
+                        <li>Wheel speed sensor circuit high resistance</li>
+                        <li>Wheel speed sensor circuit, open circuit</li>
+                        <li>The resistance of the wheel speed sensor changed from the nominal value of 950±80 ohms</li>
+                    </ul>
+                </td>
+                <td>Check rear right hand wheel speed sensor for correct air gap. Refer to the electrical guides and check rear right hand wheel speed sensor circuit for high resistance, open circuit. Check rear right hand wheel speed sensor resistance for correct nominal value of 950±80 ohms.</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>Inlet valve right hand front - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Right hand front inlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-5 front right inlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>Outlet valve right hand front - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Right hand front outlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-4 front right outlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>Inlet valve left hand front - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Left hand front inlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-2 front left inlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>Outlet valve left hand front - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Left hand front outlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-1 front left outlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Inlet valve right hand rear - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Right hand rear inlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-11 rear right inlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>Outlet valve right hand rear - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Right hand rear outlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-10 rear right outlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>Inlet valve left hand rear - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Left hand rear inlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-8 rear left inlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <!-- Page 8 content -->
+            <tr>
+                <td>97</td>
+                <td>Outlet valve left hand rear - power amp with short circuit to Ubatt</td>
+                <td><ul><li>Left hand rear outlet valve short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-7 rear left outlet modulator valve circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Pump relay - power amp with short circuit to Ubatt</td>
+                <td><ul><li>ABS pump relay coil circuit, short circuit to power</li></ul></td>
+                <td>Refer to the electrical guides and check C0506-15 ABS pump relay coil circuit for short circuit to power.</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Sensor right hand front - no sensor output at all</td>
+                <td>
+                    <ul>
+                        <li>Front right hand wheel speed sensor extremely large air gap</li>
+                        <li>Tone ring broken/missing</li>
+                    </ul>
+                </td>
+                <td>Check front right hand wheel speed sensor for correct air gap. Check tone ring is not damaged or missing.</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Sensor left hand rear - no sensor output at all</td>
+                <td>
+                    <ul>
+                        <li>Rear left hand wheel speed sensor extremely large air gap</li>
+                        <li>Tone ring broken/missing</li>
+                    </ul>
+                </td>
+                <td>Check rear left hand wheel speed sensor for correct air gap. Check tone ring is not damaged or missing.</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Sensor left hand front - no sensor output at all</td>
+                <td>
+                    <ul>
+                        <li>Front left hand wheel speed sensor extremely large air gap</li>
+                        <li>Tone ring broken/missing</li>
+                    </ul>
+                </td>
+                <td>Check front left hand wheel speed sensor for correct air gap. Check tone ring is not damaged or missing.</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Sensor right hand rear - no sensor output at all</td>
+                <td>
+                    <ul>
+                        <li>Rear right hand wheel speed sensor extremely large air gap</li>
+                        <li>Tone ring broken/missing</li>
+                    </ul>
+                </td>
+                <td>Check rear right hand wheel speed sensor for correct air gap. Check tone ring is not damaged or missing.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Page 9 -->
+    <h1>Anti-Lock Brake System (ABS) Module (70.25.12)</h1>
+    <div class="publication-date">Published: Jan 16, 2007</div>
+
+    <h2>Removal</h2>
+    <ol>
+        <li>Disconnect the battery ground cable.<br>
+            For additional information, refer to <a href="#">Battery Disconnect and Connect</a>.</li>
+        <li>Remove the RH front seat cushion.<br>
+            For additional information, refer to <a href="#">Front Seat Cushion (78.10.12/99)</a>.</li>
+        <li>Remove the anti-lock brake system (ABS) module cover.
+            <ul>
+                <li>Release the clip.</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/E89791.png" alt="ABS module cover with clip.">
+                <div class="caption">E89791</div>
+            </div>
+        </li>
+        <li>Disconnect the 3 electrical connectors from the ABS module.
+            <div class="image-container">
+                <img src="images/E89792.png" alt="Disconnecting ABS module connectors.">
+                <div class="caption">E89792</div>
+            </div>
+        </li>
+        <li>Remove the ABS module.
+            <ul>
+                <li>Remove the 3 bolts.</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/E89982.png" alt="Removing the ABS module.">
+                <div class="caption">E89982</div>
+            </div>
+        </li>
+    </ol>
+    
+    <h2>Installation</h2>
+    <ol>
+        <li>Install the ABS module.</li>
+    </ol>
+
+    <!-- Page 10 -->
+    <ul>
+        <li>Tighten the bolts to 10 Nm (7 lb.ft).</li>
+    </ul>
+    <ol start="2">
+        <li>Connect the ABS module electrical connectors.</li>
+        <li>Install the ABS module cover.
+            <ul>
+                <li>Secure with the clip.</li>
+            </ul>
+        </li>
+        <li>Install the RH front seat cushion.<br>
+            For additional information, refer to <a href="#">Front Seat Cushion (78.10.12/99)</a>.</li>
+        <li>Connect the battery ground cable.<br>
+            For additional information, refer to <a href="#">Battery Connect</a>.</li>
+    </ol>
+
+    <!-- Page 11 -->
+    <h1>Hydraulic Control Unit (HCU)</h1>
+    <div class="publication-date">Published: Apr 14, 2006</div>
+    
+    <h2>Removal</h2>
+    <ol>
+        <li>Position cloth under modulator to absorb any fluid spillage.</li>
+        <li>Disconnect 2 inlet brake pipe unions from pump side of modulator.</li>
+        <li>
+            <div class="caution">
+                <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+                <strong>CAUTION:</strong> Plug the connections.
+            </div>
+            Disconnect 4 outlet brake pipe unions from top of modulator.
+        </li>
+        <li>Disconnect 2 multiplugs from rear of modulator.</li>
+        <li>Loosen nut securing rear of modulator to mounting bracket.</li>
+        <li>Remove 2 nuts securing front of modulator to mounting bracket.</li>
+        <li>Release modulator from mounting bracket.</li>
+        <li>Disconnect multiplug from base of modulator.</li>
+        <li>Remove modulator.</li>
+        <li>Remove 3 mounting rubbers from old modulator and fit to new.</li>
+    </ol>
+    <div class="image-container">
+        <img src="images/M700861.png" alt="Hydraulic Control Unit (HCU) removal points.">
+        <div class="caption">M700861</div>
+    </div>
+    
+    <h2>Installation</h2>
+    <ol>
+        <li>Position modulator to mounting bracket and connect multiplug.</li>
+        <li>Instal modulator to mounting bracket and tighten nuts to 9 Nm (7 lbf.ft).</li>
+        <li>Connect 2 multiplugs to rear of modulator.</li>
+        <li>Remove plugs from brake pipes and modulator.</li>
+        <li>Clean brake pipe unions.</li>
+    </ol>
+
+    <!-- Page 12 -->
+    <ol start="6">
+        <li>Connect brake pipe unions to modulator ensuring pipes are connected to their correct ports.</li>
+        <li>Tighten all unions to 14 Nm (10 lbf.ft).</li>
+        <li>
+            <div class="note">
+                <strong>NOTE:</strong> To ensure correct operation, the ABS system MUST be tested using TestBook.
+            </div>
+            Bleed brake system.<br>
+            For additional information, refer to <a href="#">Brake System Bleeding (70.25.02)</a>.
+        </li>
+    </ol>
+
+    <!-- Page 13 -->
+    <h1>Front Wheel Speed Sensor (70.65.30)</h1>
+    <div class="publication-date">Published: Apr 14, 2006</div>
+    
+    <h2>Removal</h2>
+    <div class="caution">
+        <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+        <strong>CAUTION:</strong> The sensor is not to be replaced without first removing the sensor, cleaning it, repositioning and retesting.
+    </div>
+    <ol>
+        <li>Raise vehicle on a 2 post ramp.</li>
+        <li>
+            <div class="caution">
+                <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+                <strong>CAUTION:</strong> The sensor is not to be replaced without first removing the sensor, cleaning it, repositioning and retesting.
+            </div>
+            Carefully prise ABS sensor from front hub.
+        </li>
+        <li>Release clip securing ABS sensor harness to brake pipe.</li>
+        <li>Release clip securing ABS sensor harness to inner wing.</li>
+    </ol>
+    <div class="image-container">
+        <img src="images/M700855A.png" alt="Front ABS sensor and harness routing.">
+        <div class="caption">M700855A</div>
+    </div>
+    <ol start="5">
+        <li>Lower vehicle.</li>
+        <li>Release second clip securing ABS harness to inner wing.</li>
+        <li>Disconnect sensor harness multiplug.</li>
+        <li>Remove sensor and harness.</li>
+    </ol>
+    
+    <!-- Page 14 -->
+    <div class="image-container">
+        <img src="images/M700856.png" alt="Front ABS sensor multiplug connection.">
+        <div class="caption">M700856</div>
+    </div>
+    
+    <h2>Installation</h2>
+    <ol>
+        <li>Connect sensor harness multiplug.</li>
+        <li>Position sensor harness and secure to inner wing with clip.</li>
+        <li>Raise vehicle.</li>
+        <li>Secure harness to inner wing and brake pipe with clips.</li>
+        <li>Apply grease to sensor.</li>
+    </ol>
+    <div class="caution">
+        <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+        <strong>CAUTION:</strong> Ensure sensors are thoroughly cleaned before fitting.
+    </div>
+    <ol start="6">
+        <li>Carefully install sensor to hub assembly.</li>
+        <li>Lower vehicle.</li>
+    </ol>
+    
+    <!-- Page 15 -->
+    <h1>Rear Wheel Speed Sensor (70.65.31)</h1>
+    <div class="publication-date">Published: Apr 14, 2006</div>
+    
+    <h2>Removal</h2>
+    <div class="caution">
+        <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+        <strong>CAUTION:</strong> The sensor is not to be replaced without first removing the sensor, cleaning it, repositioning and retesting.
+    </div>
+    <ol>
+        <li>Raise vehicle on a 2 post ramp.</li>
+        <li>Remove both rear wheels.</li>
+        <li>Remove 3 bolts securing each brake disc backplate to hub assemblies.</li>
+        <li>Remove both back plates.</li>
+        <li>Remove 2 cable ties securing sensor harness to outer ends of axle.</li>
+    </ol>
+    <div class="image-container">
+        <img src="images/M700857.png" alt="Rear ABS sensor harness routing on axle.">
+        <div class="caption">M700857</div>
+    </div>
+    <ol start="6">
+        <li>
+            <div class="caution">
+                <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+                <strong>CAUTION:</strong> The sensor is not to be replaced without first removing the sensor, cleaning it, repositioning and retesting.
+            </div>
+            Carefully prise both sensors from hub assemblies.
+            <div class="image-container">
+                <img src="images/M700858.png" alt="Prising rear ABS sensor from hub assembly.">
+                <div class="caption">M700858</div>
+            </div>
+        </li>
+    </ol>
+    
+    <!-- Page 16 -->
+    <ol start="7">
+        <li>Release 4 clips securing sensor harness to axle.
+            <div class="image-container">
+                <img src="images/M700859.png" alt="Clips securing sensor harness to axle.">
+                <div class="caption">M700859</div>
+            </div>
+        </li>
+        <li>Release cable tie securing harness to differential.</li>
+        <li>Release 3 cable ties securing harness to chassis longitudinal.</li>
+        <li>Disconnect sensor multiplug.</li>
+        <li>Remove harness and sensor assembly.</li>
+    </ol>
+    <div class="image-container">
+        <img src="images/M700865.png" alt="Disconnecting rear ABS sensor multiplug.">
+        <div class="caption">M700865</div>
+    </div>
+    
+    <h2>Installation</h2>
+    <ol>
+        <li>Position harness and sensor assembly to vehicle and connect multiplug.</li>
+        <li>Apply grease to both sensors.</li>
+        <li>
+            <div class="caution">
+                <img src="../../../images/caution_symbol.PNG" alt="Caution icon">
+                <strong>CAUTION:</strong> Ensure sensors are thoroughly cleaned before fitting.
+            </div>
+            Carefully install both sensors to hub assemblies.
+        </li>
+        <li>Secure harness to axle and differential with cable ties.</li>
+        <li>Secure harness to axle with clips.</li>
+        <li>Secure harness to chassis with cable ties.</li>
+        <li>Install both back plates to hub assemblies and secure with bolts.</li>
+        <li>Install rear wheels and tighten to 130 Nm (95 lbf.ft).</li>
+        <li>Lower vehicle.</li>
+    </ol>
+
+</body>
+</html>
