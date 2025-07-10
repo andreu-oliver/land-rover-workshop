@@ -13,11 +13,11 @@ At the moment, the repository coms as it was on the CD. All files are based on p
   - [x] 100-01: Identification Codes
   - [x] 100-02: Jacking and Lifting
   - [x] 100-03: Maintenance Schedules
-- [ ] Chassis
-  - [ ] 204: Suspension
-  - [ ] 205: Driveline
-  - [ ] 206:Brake System
-  - [ ] 211: Steering System
+- [x] Chassis
+  - [x] 204: Suspension
+  - [x] 205: Driveline
+  - [x] 206:Brake System
+  - [x] 211: Steering System
 - [ ] Powertrain
   - [ ] 303: Engine
   - [ ] 308: Manual Transmission/Transaxle, Clutch and Transfer Care
@@ -34,7 +34,7 @@ At the moment, the repository coms as it was on the CD. All files are based on p
 - [ ] Body & Paint
 - [ ] Other Documents
   - [ ] Service Schedule - Miles
-  - [ ] 2.4 TDCi Vehicle Specs 
+  - [ ] 2.4 TDCi Vehicle Specs
   - [ ] Electrical Wiring
   - [ ] Electrical Connection Manuals
   - [ ] Service Bulletins
