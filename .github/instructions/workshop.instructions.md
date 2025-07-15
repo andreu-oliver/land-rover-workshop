@@ -25,11 +25,6 @@ This is a digital workshop manual for the Land Rover Defender 2.4 TDCi, converte
     - Images in the navigation and general content are centralized in `Menu/images/` with consistent naming (`lr_defender_oldnew_450.jpg`)
     - Images for the Workshop Manual sections are stored in their respective subdirectories (e.g., `Workshop Manual/3. Powertrain/303 Engine/images/`)
 
-### File Naming Conventions
-- **Spaces in filenames**: Not preserved from original CD structure (e.g., `2008 BATTERY CARE MANUAL LAND ROVER.pdf`converts to `2008_BATTERY_CARE_MANUAL_LAND_ROVER`)
-- **URL encoding**: Links use `%20` for spaces in navigation
-- **Case sensitivity**: Mixed case maintained for compatibility
-
 ## Critical Dependencies
 
 ### External References

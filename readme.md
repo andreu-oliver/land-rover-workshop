@@ -24,7 +24,7 @@ At the moment, the repository coms as it was on the CD. All files are based on p
     - [ ] 303.01: Engine 2.4l Diesel
     - [ ] 303.02: Engine Mechanical
     - [x] 303.03: Engine Cooling
-    - [ ] 303.04A: Fuel Charging & Controls
+    - [x] 303.04A: Fuel Charging & Controls
     - [ ] 303.04B: Fuel Charging and Controls Turbocharger
     - [ ] 303.05: Accessory Drive
     - [ ] 303.06: Starting System
