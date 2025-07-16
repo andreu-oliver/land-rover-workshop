@@ -33,10 +33,10 @@ At the moment, the repository coms as it was on the CD. All files are based on p
     - [x] 303.12: Intake Air Distribution & Filtering
     - [x] 303.14: Electronic Engine Controls
   - [ ] 308: Manual Transmission/Transaxle, Clutch and Transfer Care
-  - [ ] 309: Exhaust System
-  - [ ] 310: Fuel System
+  - [x] 309: Exhaust System
+  - [x] 310: Fuel System
 - [ ] Electrical
-  - [ ] 412: Climate Control System
+  - [x] 412: Climate Control System
   - [ ] 413: Instrumentation and Warning System
   - [ ] 414: Battery and Charging System
   - [ ] 415: Information and Entertainment System
