@@ -25,13 +25,13 @@ At the moment, the repository coms as it was on the CD. All files are based on p
     - [ ] 303.02: Engine Mechanical
     - [x] 303.03: Engine Cooling
     - [x] 303.04A: Fuel Charging & Controls
-    - [ ] 303.04B: Fuel Charging and Controls Turbocharger
-    - [ ] 303.05: Accessory Drive
-    - [ ] 303.06: Starting System
-    - [ ] 303.07: Glow Plug System
-    - [ ] 303.08: Engine Emission Control
-    - [ ] 303.12: Intake Air Distribution & Filtering
-    - [ ] 303.14: Electronic Engine Controls
+    - [x] 303.04B: Fuel Charging and Controls Turbocharger
+    - [x] 303.05: Accessory Drive
+    - [x] 303.06: Starting System
+    - [x] 303.07: Glow Plug System
+    - [x] 303.08: Engine Emission Control
+    - [x] 303.12: Intake Air Distribution & Filtering
+    - [x] 303.14: Electronic Engine Controls
   - [ ] 308: Manual Transmission/Transaxle, Clutch and Transfer Care
   - [ ] 309: Exhaust System
   - [ ] 310: Fuel System
